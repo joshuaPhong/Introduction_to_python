@@ -3,6 +3,10 @@ for i in range(5):    # For each number i in range 0-4. range(5) function return
 
 
 primes = [2, 3, 5, 7]   # Create new list
+# my solution
+for i in range(len(primes)):
+    print(primes[i])
 
-# Loop over primes to print each of them.
+# their solution. Is better
+for prime in primes:
     print(prime)

@@ -15,7 +15,8 @@ random_dialogue("Library", "Do you at least have a cigar, sir?",  # Call 1
                 other_guy="street clown",
                 scene="in a park")
 
-dic = {"lost_person": "old banker", "other_guy": "street_clown", "scene": "in a park"}
+dic = {"lost_person": "old banker", "other_guy": "street_clown",
+       "scene": "in a park"}
 lst = ["Do you at least have a cigar, sir?", "Sure, help yourself."]
 random_dialogue("Library", *lst, **dic)  # Call 2 - the exact same output
 
@@ -30,8 +31,10 @@ def cat(food, *args, state='still hungry', action='meow', breed='Siamese'):
 
 
 # Add a list of phrases that will be capitalized.
-phrases = # Declare the phrases following the output, like in the task description
+phrases = ["IT IS TOO FAT", "you are feeding your cat too much"]
 # Add a dict of keyword arguments.
-keywords = # Declare the keywords to insert into the narrative. The keys should match the named arguments of the cat()
+keywords = {"state": "fat", "breed": "Maine Coon", "action": "eat"}
 # Call the cat() function like in example above to print the required output.
+cat("anything", *phrases, **keywords)
 # invoke cat with some food, phrases and keywords
+
